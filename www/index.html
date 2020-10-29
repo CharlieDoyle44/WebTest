@@ -3,6 +3,21 @@
 	<head>
 		<title> Welcome! </title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script>
+		
+			function show()
+			{
+				var div = document.getElementById("projects");
+				div.style.display= "block";
+			}
+			
+			function hide()
+			{
+				var div = document.getElementById("projects");
+				div.style.display= "none";
+			}
+			
+		</script>
 	</head>
 	
 	<body>
@@ -13,10 +28,15 @@
 		</div>
 		
 		<div style="float: right">
-		<a href="index.html"> Home </a> | <a href="Contact.html"> Contact </a> | CV | Projects
+		<a href="index.html"> Home </a> | <a href="Contact.html"> Contact </a> | CV |<a onclick="show()" href="#">Projects</a>
 		</div>
 
 
+	</div>
+	<div id="projects" style="display: none; background: orange; border-bottom: 1px solid black">
+	<img src="images/gay jarjar pisscum.jpg" style="height: 100px">
+	<img src="images/gay jarjar pisscum.jpg" style="height: 100px">
+	<a onclick="hide()" href="#">Close</a>
 	</div>
 	
 	<h1> Heading 1 </h1>
